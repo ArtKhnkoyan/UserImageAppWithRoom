@@ -15,8 +15,8 @@ import android.widget.Toast;
 
 import com.khnkoyan.userimagesappwithroom.R;
 import com.khnkoyan.userimagesappwithroom.adapters.ImageListAdapter;
-import com.khnkoyan.userimagesappwithroom.databaseForRoom.AppDatabase;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.ImageRoom;
+import com.khnkoyan.userimagesappwithroom.databases.AppDatabase;
+import com.khnkoyan.userimagesappwithroom.models.ImageRoom;
 
 import java.util.ArrayList;
 import java.util.List;

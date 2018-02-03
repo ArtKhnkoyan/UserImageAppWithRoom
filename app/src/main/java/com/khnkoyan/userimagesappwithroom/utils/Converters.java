@@ -2,10 +2,10 @@ package com.khnkoyan.userimagesappwithroom.utils;
 
 import android.arch.persistence.room.TypeConverter;
 
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.UserRoom;
+import com.khnkoyan.userimagesappwithroom.models.UserRoom;
 
-import static com.khnkoyan.userimagesappwithroom.modelsForRoom.UserRoom.Gender.FEMALE;
-import static com.khnkoyan.userimagesappwithroom.modelsForRoom.UserRoom.Gender.MALE;
+import static com.khnkoyan.userimagesappwithroom.models.UserRoom.Gender.FEMALE;
+import static com.khnkoyan.userimagesappwithroom.models.UserRoom.Gender.MALE;
 
 public class Converters {
     @TypeConverter

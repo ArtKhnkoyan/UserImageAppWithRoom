@@ -3,8 +3,8 @@ package com.khnkoyan.userimagesappwithroom.asyncTask;
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.khnkoyan.userimagesappwithroom.databaseForRoom.AppDatabase;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.UserRoom;
+import com.khnkoyan.userimagesappwithroom.databases.AppDatabase;
+import com.khnkoyan.userimagesappwithroom.models.UserRoom;
 
 public class UpdateUserDataAsyncTask extends AsyncTask<UserRoom, Void, Void> {
     private Context context;

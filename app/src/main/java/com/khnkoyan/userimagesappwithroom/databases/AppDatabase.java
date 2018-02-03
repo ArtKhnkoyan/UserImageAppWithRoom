@@ -1,4 +1,4 @@
-package com.khnkoyan.userimagesappwithroom.databaseForRoom;
+package com.khnkoyan.userimagesappwithroom.databases;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
@@ -7,8 +7,8 @@ import android.arch.persistence.room.TypeConverters;
 import android.content.Context;
 
 import com.khnkoyan.userimagesappwithroom.dao.UserOrImageDAO;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.ImageRoom;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.UserRoom;
+import com.khnkoyan.userimagesappwithroom.models.ImageRoom;
+import com.khnkoyan.userimagesappwithroom.models.UserRoom;
 import com.khnkoyan.userimagesappwithroom.utils.Converters;
 
 

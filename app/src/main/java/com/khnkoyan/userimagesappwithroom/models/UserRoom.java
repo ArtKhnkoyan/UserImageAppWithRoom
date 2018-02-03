@@ -1,4 +1,4 @@
-package com.khnkoyan.userimagesappwithroom.modelsForRoom;
+package com.khnkoyan.userimagesappwithroom.models;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

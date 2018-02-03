@@ -6,7 +6,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 import com.khnkoyan.userimagesappwithroom.R;
-import com.khnkoyan.userimagesappwithroom.databaseForRoom.AppDatabase;
+import com.khnkoyan.userimagesappwithroom.databases.AppDatabase;
 
 public class StartActivity extends AppCompatActivity {
 

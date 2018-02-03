@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.khnkoyan.userimagesappwithroom.R;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.ImageRoom;
+import com.khnkoyan.userimagesappwithroom.models.ImageRoom;
 import com.khnkoyan.userimagesappwithroom.viewHolders.ImageListHolder;
 
 import java.util.ArrayList;

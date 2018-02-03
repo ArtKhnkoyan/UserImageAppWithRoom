@@ -13,8 +13,8 @@ import android.widget.Toast;
 
 import com.khnkoyan.userimagesappwithroom.R;
 import com.khnkoyan.userimagesappwithroom.asyncTask.UpdateUserDataAsyncTask;
-import com.khnkoyan.userimagesappwithroom.databaseForRoom.AppDatabase;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.UserRoom;
+import com.khnkoyan.userimagesappwithroom.databases.AppDatabase;
+import com.khnkoyan.userimagesappwithroom.models.UserRoom;
 
 public class UpdateDataActivity extends AppCompatActivity implements View.OnClickListener {
 

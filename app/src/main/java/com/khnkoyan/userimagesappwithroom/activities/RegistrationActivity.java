@@ -14,8 +14,8 @@ import android.widget.Toast;
 
 import com.khnkoyan.userimagesappwithroom.R;
 import com.khnkoyan.userimagesappwithroom.asyncTask.SaveUserDataAsyncTaskRoom;
-import com.khnkoyan.userimagesappwithroom.databaseForRoom.AppDatabase;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.UserRoom;
+import com.khnkoyan.userimagesappwithroom.databases.AppDatabase;
+import com.khnkoyan.userimagesappwithroom.models.UserRoom;
 import com.khnkoyan.userimagesappwithroom.utils.SHAUtil;
 
 public class RegistrationActivity extends AppCompatActivity implements View.OnClickListener{

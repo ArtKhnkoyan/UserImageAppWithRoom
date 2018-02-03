@@ -1,10 +1,9 @@
-package com.khnkoyan.userimagesappwithroom.modelsForRoom;
+package com.khnkoyan.userimagesappwithroom.models;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.ForeignKey;
 import android.arch.persistence.room.Ignore;
-import android.arch.persistence.room.Index;
 import android.arch.persistence.room.PrimaryKey;
 
 @Entity(tableName = "image",
@@ -14,8 +13,7 @@ import android.arch.persistence.room.PrimaryKey;
                         parentColumns = "id",
                         childColumns = "user_id",
                         onDelete = ForeignKey.CASCADE
-                )},
-        indices = {@Index(value = "id")})
+                )})
 public class ImageRoom {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")

@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.khnkoyan.userimagesappwithroom.R;
-import com.khnkoyan.userimagesappwithroom.databaseForRoom.AppDatabase;
+import com.khnkoyan.userimagesappwithroom.databases.AppDatabase;
 import com.khnkoyan.userimagesappwithroom.utils.SHAUtil;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
@@ -149,7 +149,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.btnRegistration:
                 startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
-                finish();
                 break;
         }
     }

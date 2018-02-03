@@ -4,8 +4,8 @@ import android.os.AsyncTask;
 
 import com.khnkoyan.userimagesappwithroom.activities.ImageActivity;
 import com.khnkoyan.userimagesappwithroom.activities.ProfileActivity;
-import com.khnkoyan.userimagesappwithroom.databaseForRoom.AppDatabase;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.UserRoom;
+import com.khnkoyan.userimagesappwithroom.databases.AppDatabase;
+import com.khnkoyan.userimagesappwithroom.models.UserRoom;
 
 public class GetUserDataAsyncTaskRoom extends AsyncTask<String, Void, UserRoom> {
     private ProfileActivity activity;

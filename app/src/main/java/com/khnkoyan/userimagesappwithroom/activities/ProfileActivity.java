@@ -25,9 +25,9 @@ import android.widget.Toast;
 import com.khnkoyan.userimagesappwithroom.R;
 import com.khnkoyan.userimagesappwithroom.asyncTask.DeleteUserDataByEmail;
 import com.khnkoyan.userimagesappwithroom.asyncTask.GetUserDataAsyncTaskRoom;
-import com.khnkoyan.userimagesappwithroom.databaseForRoom.AppDatabase;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.ImageRoom;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.UserRoom;
+import com.khnkoyan.userimagesappwithroom.databases.AppDatabase;
+import com.khnkoyan.userimagesappwithroom.models.ImageRoom;
+import com.khnkoyan.userimagesappwithroom.models.UserRoom;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -143,10 +143,28 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         // as you specify a parent activity in AndroidManifest.xml.
         switch (item.getItemId()) {
             case R.id.menuUserDelete:
-                DeleteUserDataByEmail asyncTask = new DeleteUserDataByEmail(this);
-                asyncTask.execute(setEmail);
-                startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
-                finish();
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage("Are you sure you want to exit?")
+                        .setCancelable(true)
+                        .setPositiveButton(R.string.dialog_yes, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                DeleteUserDataByEmail asyncTask = new DeleteUserDataByEmail(ProfileActivity.this);
+                                asyncTask.execute(setEmail);
+                                startActivity(new Intent(ProfileActivity.this, LoginActivity.class));
+                                finish();
+                            }
+                        })
+                        .setNegativeButton(R.string.dialog_no, new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                dialog.cancel();
+                            }
+                        });
+
+                AlertDialog dialog = builder.create();
+                dialog.getWindow().setBackgroundDrawableResource(R.color.colorPrimary);
+                dialog.show();
+
                 return true;
             case R.id.menuSignOut:
                 showDialog();

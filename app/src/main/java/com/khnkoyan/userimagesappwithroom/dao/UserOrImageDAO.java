@@ -5,8 +5,8 @@ import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 import android.arch.persistence.room.RoomWarnings;
 
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.ImageRoom;
-import com.khnkoyan.userimagesappwithroom.modelsForRoom.UserRoom;
+import com.khnkoyan.userimagesappwithroom.models.ImageRoom;
+import com.khnkoyan.userimagesappwithroom.models.UserRoom;
 
 import java.util.List;
 

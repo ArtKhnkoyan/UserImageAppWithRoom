@@ -3,7 +3,7 @@ package com.khnkoyan.userimagesappwithroom.asyncTask;
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.khnkoyan.userimagesappwithroom.databaseForRoom.AppDatabase;
+import com.khnkoyan.userimagesappwithroom.databases.AppDatabase;
 
 /**
  * Created by User on 02.02.2018.
